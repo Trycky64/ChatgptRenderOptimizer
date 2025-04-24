@@ -33,23 +33,25 @@ ChatGPT does not currently virtualize or dynamically load messages in large conv
 
 You can adjust the number of visible messages by modifying the `DEFAULT_VISIBLE_COUNT` constant at the top of the script:
 
+## Configuration
+
+You can adjust the number of visible messages by modifying the `DEFAULT_VISIBLE_COUNT` constant at the top of the script:
+
 ```javascript
 const DEFAULT_VISIBLE_COUNT = 10;
 ```
+
 To view all messages at any time, use the floating toggle button added to the bottom-right corner of the page.
-Limitations
 
-    This script only modifies client-side rendering; no messages are deleted or lost.
+## Limitations
 
-    The toggle resets on page reload.
+- This script only modifies client-side rendering; no messages are deleted or lost.
+- The toggle resets on page reload.
+- The performance gain depends on the size of the conversation and system/browser resources.
 
-    The performance gain depends on the size of the conversation and system/browser resources.
-
-License
+## License
 
 This project is open-sourced under the MIT License. You are free to use, modify, and distribute this script under the terms of the license.
 
-
 ---
-
 Let me know if you need help customizing it further, like adding badges, links, or GitHub Pages setup.
