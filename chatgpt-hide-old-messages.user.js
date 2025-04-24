@@ -46,7 +46,7 @@
   }, 500);
 
   const button = document.createElement('button');
-  button.textContent = 'Hide Old Messages';
+  button.textContent = 'Show All Messages'; // correct default label
   button.style.position = 'fixed';
   button.style.bottom = '20px';
   button.style.right = '20px';
@@ -62,8 +62,16 @@
 
   button.onclick = () => {
     isActive = !isActive;
-    updateVisibility();
-    button.textContent = isActive ? 'Hide Old Messages' : 'Show All Messages';
+
+    if (!isActive) {
+      // Show all messages when deactivated
+      const allMessages = document.querySelectorAll('article[data-testid^="conversation-turn"]');
+      allMessages.forEach(el => el.style.display = '');
+      button.textContent = 'Hide Old Messages';
+    } else {
+      updateVisibility();
+      button.textContent = 'Show All Messages';
+    }
   };
 
   document.body.appendChild(button);
