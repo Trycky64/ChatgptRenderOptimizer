@@ -35,7 +35,7 @@ You can adjust the number of visible messages by modifying the `DEFAULT_VISIBLE_
 
 ```javascript
 const DEFAULT_VISIBLE_COUNT = 10;
-
+```
 To view all messages at any time, use the floating toggle button added to the bottom-right corner of the page.
 Limitations
 
