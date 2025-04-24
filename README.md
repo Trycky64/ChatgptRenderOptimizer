@@ -15,31 +15,25 @@ ChatGPT does not currently virtualize or dynamically load messages in large conv
 - Automatically displays only the most recent messages (default: 10)
 - Dynamically updates as new messages are added
 - Provides a fixed-position toggle button to switch between limited and full view
-- Non-intrusive design with no modifications to ChatGPT’s native interface
+- Non-intrusive design with no modifications to ChatGPT's native interface
 
 ## Installation
 
 1. Install a userscript manager:
-   - [Tampermonkey](https://www.tampermonkey.net/)
-   - [Violentmonkey](https://violentmonkey.github.io/)
+   - Tampermonkey: https://www.tampermonkey.net/
+   - Violentmonkey: https://violentmonkey.github.io/
 
 2. Install the script:
-   - Direct installation link: 
+   - Direct installation link: https://github.com/Trycky64/ChatgptRenderOptimizer/raw/main/chatgpt-hide-old-messages.user.js
    - Or copy the contents of `chatgpt-hide-old-messages.user.js` into a new userscript
 
-3. Navigate to https://chat.openai.com. The script will run automatically.
+3. Navigate to https://chatgpt.com. The script will run automatically.
 
 ## Configuration
 
 You can adjust the number of visible messages by modifying the `DEFAULT_VISIBLE_COUNT` constant at the top of the script:
 
-## Configuration
-
-You can adjust the number of visible messages by modifying the `DEFAULT_VISIBLE_COUNT` constant at the top of the script:
-
-```javascript
-const DEFAULT_VISIBLE_COUNT = 10;
-```
+    const DEFAULT_VISIBLE_COUNT = 10;
 
 To view all messages at any time, use the floating toggle button added to the bottom-right corner of the page.
 
@@ -52,6 +46,3 @@ To view all messages at any time, use the floating toggle button added to the bo
 ## License
 
 This project is open-sourced under the MIT License. You are free to use, modify, and distribute this script under the terms of the license.
-
----
-Let me know if you need help customizing it further, like adding badges, links, or GitHub Pages setup.
